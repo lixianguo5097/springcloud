@@ -11,7 +11,7 @@ eureka:
   client:
     service-url:
       #Eureka 客户端与 Eureka 服务端进行交互的地址
-      defaultZone: http://127.0.0.1:8100/eureka/
+      defaultZone: http://127.0.0.1:8200/eureka/
   # 心跳检测检测与续约时间
   # 测试时将值设置设置小些，保证服务关闭后注册中心能及时踢出服务
   instance:

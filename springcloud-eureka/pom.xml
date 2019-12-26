@@ -13,6 +13,9 @@
     <modules>
         <module>springboot-eureka-server</module>
         <module>springboot-eureka-client</module>
+        <module>springboot-eureka-server1</module>
+        <module>springboot-eureka-server2</module>
+        <module>springboot-eureka-server3</module>
     </modules>
 
     <dependencies>
