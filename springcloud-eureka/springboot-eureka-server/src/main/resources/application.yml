@@ -2,6 +2,10 @@
 server:
   port: 8100
 
+spring:
+  application:
+    name: eureka-server
+
 #eureka基本配置信息
 eureka:
   client:
@@ -17,3 +21,4 @@ eureka:
     enable-self-preservation: false
     ##剔除失效服务间隔
     eviction-interval-timer-in-ms: 2000
+
