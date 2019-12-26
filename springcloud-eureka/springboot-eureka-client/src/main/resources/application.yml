@@ -1,0 +1,15 @@
+#端口号
+server:
+  port: 9100
+
+#eureka基本配置信息
+eureka:
+  client:
+    service-url:
+      #Eureka 客户端与 Eureka 服务端进行交互的地址
+      defaultZone: http://127.0.0.1:8100/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: eureka-client
