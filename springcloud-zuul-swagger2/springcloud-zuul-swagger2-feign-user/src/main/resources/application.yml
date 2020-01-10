@@ -1,0 +1,27 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: app-user
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+  server:
+    # 测试时关闭自我保护机制，保证不可用服务及时踢出
+    enable-self-preservation: false
+    ##剔除失效服务间隔
+    eviction-interval-timer-in-ms: 2000
+
+####swagger相关配置
+swagger:
+  base-package: com.lxg.controller
+  title: SpringCloud2.x构建微服务项目-用户服务接口
+  description: 用户有关的服务
+  version: 1.1
+  terms-of-service-url: www.lxgblog.com
+  contact:
+    name: 李先国
+    email: 15279295097@163.com

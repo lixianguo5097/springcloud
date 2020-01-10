@@ -10,6 +10,7 @@
     <modules>
         <module>springcloud-eureka</module>
         <module>springcloud-feign</module>
+        <module>springcloud-zuul-swagger2</module>
     </modules>
 
     <parent>

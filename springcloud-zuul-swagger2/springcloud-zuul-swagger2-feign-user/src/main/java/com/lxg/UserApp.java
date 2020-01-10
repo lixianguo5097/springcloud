@@ -1,18 +1,21 @@
 package com.lxg;
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * 这其实是一个普通的服务，把自己注入到eureka中
  * @author LXG
- * @date 2019-12-31
+ * @date 2020-1-10
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class FeignServerApp {
+@EnableSwagger2Doc
+@EnableFeignClients
+public class UserApp {
     public static void main(String[] args) {
-        SpringApplication.run(FeignServerApp.class, args);
+        SpringApplication.run(UserApp.class, args);
     }
 }

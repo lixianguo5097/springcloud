@@ -2,18 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>springcloud-feign</artifactId>
+        <artifactId>springcloud</artifactId>
         <groupId>com.lxg</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-feign-eureka</artifactId>
-    <dependencies>
+    <artifactId>springcloud-zuul-swagger2</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>springcloud-zuul-swagger2-eureka</module>
+        <module>springcloud-zuul-swagger2-feign-user</module>
+        <module>springcloud-zuul-swagger2-feign-email</module>
+        <module>springcloud-zuul-swagger2-zuul</module>
+    </modules>
+<dependencies>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
     </dependency>
+
 </dependencies>
 
 </project>
