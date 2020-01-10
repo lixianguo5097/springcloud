@@ -16,12 +16,4 @@
         <module>springcloud-zuul-swagger2-feign-email</module>
         <module>springcloud-zuul-swagger2-zuul</module>
     </modules>
-<dependencies>
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-    </dependency>
-
-</dependencies>
-
 </project>

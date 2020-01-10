@@ -11,14 +11,12 @@ eureka:
     service-url:
       defaultZone: http://localhost:8100/eureka
 
-
 ### 配置网关反向代理
 zuul:
   routes:
-    api-a:
+    api-user:
       path: /api-user/**
-      serviceId: user
-    api-b:
-      ### 以 /api-member/访问转发到订单服务
+      serviceId: app-user
+    api-email:
       path: /api-email/**
       serviceId: app-email
