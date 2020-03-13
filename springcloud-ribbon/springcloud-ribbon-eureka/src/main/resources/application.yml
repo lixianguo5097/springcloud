@@ -1,0 +1,22 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: eureka-server
+
+#eureka基本配置信息
+eureka:
+  client:
+    service-url:
+      #Eureka 客户端与 Eureka 服务端进行交互的地址
+      defaultZone: http://127.0.0.1:${server.port}/eureka
+    #是否将自己注册到Eureka服务中,本身就是注册中心所以无需注册
+    register-with-eureka: false
+    #是否从Eureka中检索注册信息,本身就是注册中心所以无需检索
+    fetch-registry: false
+  server:
+    # 测试时关闭自我保护机制，保证不可用服务及时踢出
+    enable-self-preservation: false
+    ##剔除失效服务间隔
+    eviction-interval-timer-in-ms: 2000
