@@ -22,4 +22,15 @@ eureka:
     lease-renewal-interval-in-seconds: 1
     # Eureka服务端在收到最后一次心跳之后等待的时间上限，单位为秒，超过则剔除（客户端告诉服务端按照此规则等待自己）
     lease-expiration-duration-in-seconds: 2
+    # 自定义服务名称信息
+    instance-id: microservicecloud-dept9100
+    # 访问路径可以显示IP地址
+    prefer-ip-address: true
 
+info:
+  app:
+    name: microservicecloud-dept9100
+    company: www.lxgblog.com
+    build:
+      artifactId: @project.artifactId@
+      version: @project.version@
