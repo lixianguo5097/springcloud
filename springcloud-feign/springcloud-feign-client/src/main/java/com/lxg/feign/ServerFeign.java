@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author LXG
  * @date 2019-12-31
  */
-@FeignClient(name = "feign-server")
+@FeignClient(name = "feign-server" ,fallback = ServerFeignHystrix.class)
 public interface ServerFeign {
     @RequestMapping(value = "/index")
     public String index(@RequestParam(value = "name") String name) ;
