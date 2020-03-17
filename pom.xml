@@ -9,9 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springcloud-eureka</module>
-        <module>springcloud-feign</module>
+        <module>springcloud-feign-hystrix</module>
         <module>springcloud-zuul-swagger2</module>
         <module>springcloud-ribbon</module>
+        <module>springcloud-config-bus</module>
     </modules>
 
     <parent>
