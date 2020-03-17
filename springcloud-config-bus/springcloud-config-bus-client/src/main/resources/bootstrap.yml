@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      #仓库中的文件名是由name-profile组成的，例如 config-dev
+      name: config_client
+      profile: dev
+      #仓库中的分支
+      label: master
+      #config服务端的url
+      uri: http://127.0.0.1:8101

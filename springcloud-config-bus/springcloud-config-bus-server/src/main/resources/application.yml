@@ -1,0 +1,17 @@
+server:
+  port: 8101
+spring:
+  application:
+    name: config-bus
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/lixianguo/config-bus.git
+  rabbitmq:
+      host: 127.0.0.1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
