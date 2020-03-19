@@ -8,3 +8,10 @@ spring:
       label: master
       #config服务端的url
       uri: http://127.0.0.1:8101
+
+#启动配置刷新接口，访问http://本微服务ip+端口/actuator/refresh
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh

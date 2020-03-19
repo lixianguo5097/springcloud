@@ -11,19 +11,6 @@
     <modules>
         <module>springcloud-config-bus-server</module>
         <module>springcloud-config-bus-client</module>
-        <module>springcloud-config-bus-eureka</module>
     </modules>
     <artifactId>springcloud-config-bus</artifactId>
-
-
-    <!--<dependencies>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-bus</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-stream-binder-rabbit</artifactId>-->
-        <!--</dependency>-->
-    <!--</dependencies>-->
 </project>
