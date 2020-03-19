@@ -1,9 +1,0 @@
-server:
-  port: 8100 #服务端口
-
-eureka:
-  client:
-    register-with-eureka: false #是否将自己注册到服务中
-    fetch-registry: false #是否从 Eureka 中获取注册信息
-    serviceUrl: #Eureka 客户端与 Eureka 服务端进行交互的地址
-      defaultZone: http://127.0.0.1:${server.port}/eureka/
